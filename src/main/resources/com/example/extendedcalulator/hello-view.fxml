@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="662.0" prefWidth="508.0" spacing="20.0" style="-fx-background-color: #b3cde0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ui.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TextField fx:id="txtNumericScreen" alignment="CENTER_RIGHT" prefHeight="59.0" prefWidth="439.0" style="-fx-border-color: #03396c; -fx-background-radius: 0.2em; -fx-border-radius: 0.2em;" text="0">
+      <font>
+         <Font size="55.0" />
+      </font>
+   </TextField>
+   <ListView prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 0.2em; -fx-border-color: #000000; -fx-border-radius: 0.2em;" />
+   <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #03396c; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="AC" textFill="WHITE">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #03396c; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="+/-" textFill="WHITE">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #03396c; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="\%" textFill="WHITE">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onOperatorButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #005b96; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="/">
+            <font>
+               <Font size="39.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#onNumbericButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="7">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onNumbericButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="8">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onNumbericButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="9">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onOperatorButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #005b96; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="X">
+            <font>
+               <Font size="39.0" />
+            </font>
+         </Button>
+      </children>
+      <VBox.margin>
+         <Insets top="-18.0" />
+      </VBox.margin>
+   </HBox>
+   <HBox alignment="TOP_CENTER" layoutX="30.0" layoutY="258.0" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#onNumbericButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="4">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onNumbericButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="5">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onNumbericButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="6">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onOperatorButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #005b96; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="-">
+            <font>
+               <Font size="39.0" />
+            </font>
+         </Button>
+      </children>
+      <VBox.margin>
+         <Insets top="-18.0" />
+      </VBox.margin>
+   </HBox>
+   <HBox alignment="TOP_CENTER" layoutX="30.0" layoutY="360.0" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#onNumbericButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="1">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onNumbericButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="2">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onNumbericButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="3">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onOperatorButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #005b96; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="+">
+            <font>
+               <Font size="39.0" />
+            </font>
+         </Button>
+      </children>
+      <VBox.margin>
+         <Insets top="-18.0" />
+      </VBox.margin>
+   </HBox>
+   <HBox alignment="TOP_CENTER" layoutX="30.0" layoutY="462.0" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#onNumbericButttonClick" prefHeight="98.0" prefWidth="235.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="0">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #6497b1; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text=",">
+            <font>
+               <Font size="39.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onOperatorButttonClick" prefHeight="100.0" prefWidth="116.0" style="-fx-background-color: #005b96; -fx-background-radius: 0.2em; -fx-border-color: #FFF; -fx-border-radius: 0.2em;" text="=">
+            <font>
+               <Font size="39.0" />
+            </font>
+         </Button>
+      </children>
+      <VBox.margin>
+         <Insets top="-18.0" />
+      </VBox.margin>
+   </HBox>
+</VBox>
