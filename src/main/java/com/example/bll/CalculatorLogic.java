@@ -26,7 +26,7 @@ public class CalculatorLogic {
                     return Divide(value1, value2);
             }
         }
-        return -44.44;
+        return -8888.44;
     }
 
     private double Add(double value1, double value2)

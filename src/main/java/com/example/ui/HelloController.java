@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class HelloController {
@@ -71,7 +72,8 @@ public class HelloController {
             {
                 numbersList.add(Double.parseDouble(txtNumericScreen.getText()));
                 double result = calculatorLogic.Calculate(numbersList, operatorsList);
-                txtNumericScreen.setText(result+"");
+                DecimalFormat df = new DecimalFormat("#");
+                txtNumericScreen.setText(df.format(result).toString());
                 numbersList.clear();
                 operatorsList.clear();
                 lastAction = Action.Equal;
